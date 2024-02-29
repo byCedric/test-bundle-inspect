@@ -8,13 +8,14 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "test": "jest --watchAll",
-    "inspect": "npx @bycedric/inspect-test"
+    "inspect": "npx @bycedric/inspect-test",
+    "export": "rm -rf .expo && bun expo export --platform android && bun expo export --platform ios && bun expo export --platform web"
   },
   "jest": {
     "preset": "jest-expo"
   },
   "dependencies": {
-    "@bycedric/inspect-test": "./bycedric-inspect-test-0.1.2.tgz",
+    "@bycedric/inspect-test": "./bycedric-inspect-test-0.1.3.tgz",
     "@expo/vector-icons": "^14.0.0",
     "@react-navigation/native": "^6.0.2",
     "expo": "~50.0.8",

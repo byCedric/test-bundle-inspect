@@ -1,3 +1,4 @@
 const { getDefaultConfig } = require('expo/metro-config');
+const { withMetroBundleConfig } = require('@bycedric/inspect-test/metro');
 
-module.exports = getDefaultConfig(__dirname);
+module.exports = withMetroBundleConfig(getDefaultConfig(__dirname));

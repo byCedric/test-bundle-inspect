@@ -7,12 +7,14 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "inspect": "npx @bycedric/inspect-test"
   },
   "jest": {
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@bycedric/inspect-test": "./bycedric-inspect-test-0.1.2.tgz",
     "@expo/vector-icons": "^14.0.0",
     "@react-navigation/native": "^6.0.2",
     "expo": "~50.0.8",
